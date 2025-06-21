@@ -23,3 +23,7 @@
 git clone https://github.com/foiv0s/universal_lora.git
 cd universal_lora
 pip install -e .
+
+## 📖 References
+
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
