@@ -17,12 +17,15 @@
 
 ---
 
+
 ## 🚀 Installation
 
 ```bash
 git clone https://github.com/foiv0s/universal_lora.git
 cd universal_lora
 pip install -e .
+```
+
 
 ## 📖 References
 
