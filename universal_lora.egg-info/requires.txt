@@ -1,0 +1,8 @@
+torch>=2.0
+timm>=0.9.12
+
+[dev]
+pytest
+pytest-cov
+ruff
+black

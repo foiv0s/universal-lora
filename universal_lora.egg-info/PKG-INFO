@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: universal-lora
+Version: 0.1.0
+Summary: Parameter-efficient LoRA wrapper for any PyTorch model.
+Author: Foivos Ntelemis
+Author-email: Foivos Ntelemis <f.ntelemis@outlook.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.0
+Requires-Dist: timm>=0.9.12
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Dynamic: author
+Dynamic: license-file
+
+# Universal LoRA
+
+**Universal LoRA** is a lightweight, modular PyTorch library that enables the integration of **Low-Rank Adaptation (LoRA)** into common neural network layers. The library provides easy-to-use wrappers and utility functions to inject LoRA modules into any PyTorch model, including models from `timm`.
+
+---
+
+## 🔧 Features
+
+- 🧩 Drop-in LoRA wrappers for:
+  - `nn.Linear`
+  - `nn.Conv1d`, `nn.Conv2d`, `nn.Conv3d`
+  - `nn.Embedding`
+- 🔁 Recursively inject LoRA layers using `apply_lora()`
+- ❄️ Automatically freeze original layer weights
+- 💾 Save/load only the LoRA-specific parameters
+- 🧪 Includes PyTest-based test suite
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/foiv0s/universal_lora.git
+cd universal_lora
+pip install -e .
